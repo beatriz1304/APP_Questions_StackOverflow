@@ -6,4 +6,6 @@
     <string name="button3">Android Studio</string>
     <string name="button4">Xcode</string>
     <string name="button5">Swift</string>
+    <string name="title_display_list">Stack Overflow Questions</string>
+    <string name="title_display_main">Choose Tag</string>
 </resources>
