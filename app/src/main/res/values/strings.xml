@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">QuestionsStack</string>
+
+    <string name="button1">Android</string>
+    <string name="button2">iOS</string>
+    <string name="button3">Android Studio</string>
+    <string name="button4">Xcode</string>
+    <string name="button5">Swift</string>
 </resources>

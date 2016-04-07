@@ -9,8 +9,52 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.beatriz.questionsstack.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <Button
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_width="250dp"
+        android:text="@string/button1"
+        android:layout_gravity = "center_horizontal"
+        android:onClick="parseJSON"
+        android:id="@+id/b1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="@string/button2"
+        android:layout_gravity = "center_horizontal"
+        android:onClick="parseJSON"
+        android:id="@+id/b2"
+        android:layout_below="@+id/b1"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="@string/button3"
+        android:layout_gravity = "center_horizontal"
+        android:onClick="parseJSON"
+        android:id="@+id/b3"
+        android:layout_below="@+id/b2"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="@string/button4"
+        android:layout_gravity = "center_horizontal"
+        android:onClick="parseJSON"
+        android:id="@+id/b4"
+        android:layout_below="@+id/b3"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="@string/button5"
+        android:layout_gravity = "center_horizontal"
+        android:onClick="parseJSON"
+        android:id="@+id/b5"
+        android:layout_below="@+id/b4"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
