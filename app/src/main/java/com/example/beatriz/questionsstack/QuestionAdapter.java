@@ -13,6 +13,8 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 /**
  * Created by Beatriz on 07/04/2016.
  */
@@ -59,7 +61,8 @@ public class QuestionAdapter extends ArrayAdapter {
         Questions questions = (Questions) this.getItem(position);
 
 //*******************************LOAD IMAGES *********************************************
-        ImageView image = (ImageView) row.findViewById(R.id.row_image);
+      //  ImageView image = (ImageView) row.findViewById(R.id.row_image);
+        CircleImageView image = (CircleImageView) row.findViewById(R.id.row_image);
         Picasso.with(getContext()).load(questions.getImageUser()).into(image);
 //*****************************************************************************************
 

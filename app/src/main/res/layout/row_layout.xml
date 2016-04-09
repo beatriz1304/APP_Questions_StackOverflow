@@ -2,15 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp">
+    android:padding="5dp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/row_image"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:padding="1dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher" />
+
 
     <TextView
         android:id="@+id/row_title"
@@ -18,31 +19,32 @@
         android:layout_width="wrap_content"
         android:layout_alignTop="@+id/row_image"
         android:layout_toRightOf="@+id/row_image"
-
+        android:paddingLeft="20dp"
         android:text="Title of the question"
-
-
-        />
+        android:textColor="#000"
+    />
 
     <TextView
-        android:layout_height="50dp"
-        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:id="@+id/row_nameUser"
-        android:layout_below="@+id/row_title"
         android:layout_toRightOf="@+id/row_image"
+        android:layout_below="@+id/row_title"
         android:text="Name of the user"
+        android:paddingLeft="20dp"
         android:gravity="center"
        />
 
     <TextView
-        android:layout_alignParentRight="true"
-        android:layout_height="50dp"
-        android:layout_width="wrap_content"
         android:id="@+id/row_score"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingRight="5dp"
         android:layout_below="@+id/row_title"
-        android:layout_toRightOf="@+id/row_nameUser"
         android:text="50"
-        android:gravity="center"
-        android:textAppearance="?android:textAppearanceLarge"/>
+        android:textColor="#66FF33"
+
+        />
 
 </RelativeLayout>
