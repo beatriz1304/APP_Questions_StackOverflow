@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="72dp"
     android:padding="5dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -9,6 +9,8 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:padding="1dp"
         android:src="@mipmap/ic_launcher" />
 
@@ -19,9 +21,14 @@
         android:layout_width="wrap_content"
         android:layout_alignTop="@+id/row_image"
         android:layout_toRightOf="@+id/row_image"
+
+        android:ellipsize="end"
+        android:maxLines="2"
         android:paddingLeft="20dp"
         android:text="Title of the question"
         android:textColor="#000"
+        android:textSize="14sp"
+       
     />
 
     <TextView
@@ -29,10 +36,13 @@
         android:layout_width="wrap_content"
         android:id="@+id/row_nameUser"
         android:layout_toRightOf="@+id/row_image"
-        android:layout_below="@+id/row_title"
+        android:textColor="#E91E63"
+        android:layout_alignParentBottom="true"
         android:text="Name of the user"
         android:paddingLeft="20dp"
         android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12dp"
        />
 
     <TextView
@@ -40,11 +50,13 @@
         android:layout_alignParentRight="true"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
         android:paddingRight="5dp"
-        android:layout_below="@+id/row_title"
-        android:text="50"
-        android:textColor="#66FF33"
 
+        android:text="50"
+        android:textStyle="bold"
+        android:textColor="#3949AB"
+        android:textSize="10dp"
         />
 
 </RelativeLayout>

@@ -68,7 +68,7 @@ public class QuestionAdapter extends ArrayAdapter {
 
         questionHolder.tx_title.setText(questions.getTitle());
         questionHolder.tx_nameUser.setText(questions.getNameUser());
-        questionHolder.tx_score.setText(questions.getScore());
+        questionHolder.tx_score.setText("Score: " + questions.getScore());
         return row;
     }
 
