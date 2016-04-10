@@ -30,22 +30,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_main);
+        setContentView(R.layout.activity_main_buttons);
 
-
-        // Using a RecyclerView because of its performance benefits vs. ListView
         RecyclerView recList = (RecyclerView) findViewById(R.id.cardList);
         recList.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
-        //recList.setLayoutManager(llm);
         recList.setLayoutManager((new GridLayoutManager(this, 2)));
 
         ButtonAdapter buttonAdapter = new ButtonAdapter(createButtonInfoList());
         recList.setAdapter(buttonAdapter);
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -129,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
             json_string = result;
             if(json_string==null){
-                Toast.makeText(getApplicationContext(),"First Get JSON",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),R.string.popupConnection,Toast.LENGTH_LONG).show();
             }else{
                 Intent intent = new Intent(getApplicationContext(),DisplayListView.class);
                 intent.putExtra("json_data",json_string);
@@ -142,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void parseJSON(View view){
         String tag="";
-        Log.d("android", view.getId()+" ");
+        
         switch(view.getId()) {
             case R.string.tag1:
                tag = "android";

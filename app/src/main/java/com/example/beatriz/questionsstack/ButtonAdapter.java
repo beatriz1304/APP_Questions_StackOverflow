@@ -1,7 +1,6 @@
 package com.example.beatriz.questionsstack;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +39,7 @@ public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.ButtonView
     public ButtonViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View itemView = LayoutInflater.
                 from(viewGroup.getContext()).
-                inflate(R.layout.activity_main, viewGroup, false);
+                inflate(R.layout.tag_button_layout, viewGroup, false);
 
         return new ButtonViewHolder(itemView);
     }

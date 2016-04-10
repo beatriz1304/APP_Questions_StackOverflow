@@ -39,11 +39,15 @@
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:text="See the questions"
+            android:layout_height="38dp"
+            android:text="@string/buttonText"
             android:id="@+id/imageButton"
             android:layout_margin="10dp"
-            android:textSize="10dp"
+            android:textSize="12dp"
+            android:textColor="#FFF"
+            android:background="@drawable/shapebutton"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
             android:layout_centerInParent="true"
             android:layout_below="@+id/txtName"
             android:onClick="parseJSON"
