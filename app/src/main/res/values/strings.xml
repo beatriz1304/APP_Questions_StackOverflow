@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">QuestionsStack</string>
+    <string name="action_settings">Settings</string>
 
     <string name="button1">Android</string>
     <string name="button2">iOS</string>
@@ -8,4 +9,16 @@
     <string name="button5">Swift</string>
     <string name="title_display_list">Stack Overflow Questions</string>
     <string name="title_display_main">Choose Tag</string>
+
+
+
+    <string name="tag1">android</string>
+    <string name="tag2">android-studio</string>
+    <string name="tag3">ios</string>
+    <string name="tag4">swift</string>
+    <string name="tag5">xcode</string>
+
+
+
+
 </resources>
