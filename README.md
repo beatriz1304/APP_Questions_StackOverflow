@@ -14,8 +14,8 @@ For each question it's show the title of the question, the name of the user with
 
 ##Screen 
 ***
-![Main View][screenshots/mainView.png]
-![List View][screenshots/listView.png]
+<img src="/screenshots/mainView.png" width="300">
+<img src="/screenshots/listView.png" width="300">
 
 
 
